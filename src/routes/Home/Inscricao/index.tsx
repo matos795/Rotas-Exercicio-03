@@ -7,10 +7,14 @@ export default function Inscricao() {
     return(
         <>
             <main>
-                <TextField text="Página de inscrição" />
-                <Link to='/promocao'>
-                    <Button text="Ver promoção" />
-                </Link>
+                <div className="rt-container">
+                    <TextField text="Página de inscrição" />
+                    <div className="dflex">
+                        <Link to='/promocao'>
+                            <Button text="Ver promoção" />
+                        </Link>
+                    </div>
+                </div>
             </main>
         </>
     );

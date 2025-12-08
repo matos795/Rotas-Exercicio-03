@@ -6,7 +6,7 @@ type Props = {
 
 export default function TextField({ text }:Props) {
     return(
-        <div className="rt-container rt-text-field">
+        <div className="rt-text-field">
             <p>
                 { text }
             </p>

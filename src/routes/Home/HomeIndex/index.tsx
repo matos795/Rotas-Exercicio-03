@@ -6,10 +6,15 @@ export default function HomeIndex() {
     return (
         <>
             <main>
-                <TextField text="Página inicial" />
-                <Link to='/promocao'>
-                    <Button text="Ver promoção" />
-                </Link>
+                <div className="rt-container">
+                    <TextField text="Página inicial" />
+                    <div className="dflex">
+                        <Link to='/promocao'>
+                            <Button text="Ver promoção" />
+                        </Link>
+                    </div>
+
+                </div>
             </main>
         </>
     );

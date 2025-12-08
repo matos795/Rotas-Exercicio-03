@@ -6,10 +6,14 @@ export default function Promocao() {
     return(
         <>
             <main>
-                <TextField text='Página de promoção' />
-                <Link to='/inscricao'>
-                    <Button text='Quero participar' />
-                </Link>
+                <div className="rt-container">
+                    <TextField text='Página de promoção' />
+                    <div className='dflex'>
+                        <Link to='/inscricao'>
+                            <Button text='Quero participar' />
+                        </Link>
+                    </div>
+                </div>
             </main>
         </>
     );
