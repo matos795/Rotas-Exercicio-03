@@ -11,3 +11,20 @@ nav h2 {
     font-size: 20px;
     font-weight: 700;
 }
+
+.rt-nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rt-nav-items-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rt-nav-items-right p {
+    color: var(--font-header-collor);
+    font-weight: 400;
+    font-size: 14px;
+}
