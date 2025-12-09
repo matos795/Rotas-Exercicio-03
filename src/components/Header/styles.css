@@ -14,17 +14,24 @@ nav h2 {
 
 .rt-nav-items {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 .rt-nav-items-right {
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 
 .rt-nav-items-right p {
     color: var(--font-header-collor);
-    font-weight: 400;
     font-size: 14px;
+}
+
+.rt-navlink-active {
+    font-weight: 700;
+}
+
+.rt-navlink-non-active {
+    font-weight: 400;
 }

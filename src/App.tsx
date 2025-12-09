@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Home from './routes/Home'
 import HomeIndex from './routes/Home/HomeIndex'
 import Promocao from './routes/Home/Promocao'
@@ -13,7 +13,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}>
-            <Route index element={<HomeIndex />} />
+            <Route index element={<Navigate to='/home' />} />
             <Route path='home' element={<HomeIndex />} />
             <Route path='promocao' element={<Promocao />} />
             <Route path='inscricao' element={<Inscricao />} />

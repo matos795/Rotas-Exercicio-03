@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './styles.css'
 
 export default function Header() {
@@ -11,15 +11,21 @@ export default function Header() {
                     </Link>
 
                     <div className='rt-nav-items-right'>
-                        <Link to='/'>
+                        <NavLink 
+                        className={({ isActive }) => isActive ? 'rt-navlink-active' : 'rt-navlink-non-active'}
+                        to='/home'>
                             <p>Início</p>                    
-                        </Link>
-                        <Link to='/promocao'>
+                        </NavLink>
+                        <NavLink 
+                        className={({ isActive }) => isActive ? 'rt-navlink-active' : 'rt-navlink-non-active'}
+                        to='/promocao'>
                             <p>Promoção</p>
-                        </Link>
-                        <Link to='inscricao'>
+                        </NavLink>
+                        <NavLink 
+                        className={({ isActive }) => isActive ? 'rt-navlink-active' : 'rt-navlink-non-active'}
+                        to='/inscricao'>
                             <p>Participar</p>
-                        </Link>
+                        </NavLink>
                     </div>
                 </div>
             </nav>
